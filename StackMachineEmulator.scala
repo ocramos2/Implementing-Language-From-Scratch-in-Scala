@@ -61,7 +61,7 @@ object StackMachineEmulator {
             
             case (CosI, head :: tail) => ((scala.math.cos(head)) :: tail) -> env
             
-    		case (PopI, _ :: tail) => tail -> env
+            case (PopI, _ :: tail) => tail -> env
 
             case _ => throw new IllegalArgumentException()
 
